@@ -1,57 +1,76 @@
-/* Reset some default browser styles */
-* {
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styles */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
     background-color: #f4f4f4;
-    padding: 20px;
+    color: #333;
 }
 
-/* Header styles */
-h1 {
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
     text-align: center;
-    color: #2c3e50;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+    padding: 0.5rem;
+    background: #444;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background: #555;
+}
+
+main {
+    padding: 20px;
+    max-width: 960px;
+    margin: auto;
+    background: #fff;
+}
+
+section {
     margin-bottom: 20px;
-}
-
-/* Paragraph styles */
-p {
-    font-size: 1.2em;
-    margin: 20px 0;
-    text-align: center;
-}
-
-/* Container to center the content */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #eee;
 }
 
-/* Link styles */
-a {
-    color: #3498db;
+.project {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #007bff; /* A nice blue accent */
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project a {
+    color: #007bff;
     text-decoration: none;
 }
 
-a:hover {
+.project a:hover {
     text-decoration: underline;
 }
 
-/* Footer styles */
 footer {
     text-align: center;
-    margin-top: 40px;
-    font-size: 0.9em;
-    color: #888;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
 }
