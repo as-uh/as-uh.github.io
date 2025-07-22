@@ -4,100 +4,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio - [Your Name]</title>
-    <link rel="stylesheet" href="style.css"> <!-- We'll create this next -->
+    <meta name="description" content="Alok Singh - Data Scientist and AI/ML Researcher specializing in Bioinformatics and Machine Learning">
+    <title>Alok Singh - Data Scientist & AI/ML Researcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Scroll to top button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <header>
-        <h1>Alok Singh</h1>
-        <p>Early career researcher in Bioinformatics</p>
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-section">
+                    <div class="profile-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="profile-text">
+                        <h1 class="fade-in">Alok Singh</h1>
+                        <p class="subtitle fade-in-delay">Data Scientist & AI/ML Researcher</p>
+                        <p class="description fade-in-delay-2">Specializing in Bioinformatics and Machine Learning</p>
+                        <div class="social-links fade-in-delay-3">
+                            <a href="mailto:aloksinghmintorian@hotmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            <a href="https://www.linkedin.com/in/alok-singh-as/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/as-uh" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <nav>
-        <a href="#about">About Me</a> |
-        <a href="#projects">Projects</a> |
-        <a href="#contact">Contact</a>
-        <a href="apps.html">Applications</a>
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <span class="nav-brand">AS</span>
+                <div class="nav-links">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="apps.html" class="nav-link">Apps</a>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                Hi, I'm Alok Singh. My journey into the world of data began with the vast datasets of the cosmos in
-                Astrophysics and has since focused sharply on the practical power of AI and Machine Learning. I hold an
-                MSc with Distinction in Data Science from the University of Hertfordshire, where I specialized in Neural
-                Networks, Machine Learning, and Applied Data Science, building upon a BSc in Astrophysics rich in
-                computational physics and programming (Python, MATLAB).
-            </p>
-            <p>
-                Currently, as a Graduate Research Assistant at the University of Exeter's Clinical and Biomedical
-                Sciences department, I am immersed in analyzing data to understand the aetiology of symptoms reported
-                during the menopause transition, applying my analytical skills to contribute to vital biomedical
-                research. This role complements my prior professional experience where I've developed cutting-edge AI/ML
-                solutions. At GV Black Dentech, I engineered models using EfficientNet and CNNs for high-level feature
-                extraction from X-ray images, achieving remarkable precision. As a Data Science Intern with Climate
-                Connect Digital, I developed time series and gradient boosting models that drastically improved
-                day-ahead energy market predictions, reducing MAPE from nearly 60% to just over 4%. My research
-                background also includes developing physics-based algorithms to analyze astronomical data, such as
-                detecting binary star systems from Gaia telescope data.
-            </p>
-            <p>
-                I thrive on leveraging tools like Python, TensorFlow, PyTorch, and Apache Spark to transform complex
-                data into meaningful insights and robust applications. I'm driven by a curiosity to understand complex
-                systems and a passion for building solutions that make a tangible impact across diverse fields – from
-                astrophysics and energy markets to current challenges in biomedical science.
-            </p>
-            <p>
-                <strong>Core Competencies:</strong> Machine Learning, Deep Learning, Data Analysis & Visualisation,
-                Algorithm Development, Python, TensorFlow, PyTorch, Docker, Git, Time Series Analysis, Biomedical Data
-                Analysis.
-                <br><em>(DeepLearning.AI TensorFlow Developer Specialisation)</em>
-            </p>
-        </section>
+        <div class="container">
+            <section id="about" class="section">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="intro">
+                            Hi, I'm Alok Singh. My journey into the world of data began with the vast datasets of the cosmos in
+                            Astrophysics and has since focused sharply on the practical power of AI and Machine Learning.
+                        </p>
+                        <div class="education-highlight">
+                            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                            <p><strong>MSc with Distinction in Data Science</strong> - University of Hertfordshire</p>
+                            <p>Specialized in Neural Networks, Machine Learning, and Applied Data Science</p>
+                            <p><strong>BSc in Astrophysics</strong> - Rich in computational physics and programming</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <section id="projects">
-            <h2>My Work & Apps</h2>
+            <section id="experience" class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="experience-timeline">
+                    <div class="experience-item">
+                        <div class="experience-marker"></div>
+                        <div class="experience-content">
+                            <h3>Graduate Research Assistant</h3>
+                            <p class="company">University of Exeter - Clinical and Biomedical Sciences</p>
+                            <p class="duration">Current</p>
+                            <p>Analyzing data to understand the aetiology of symptoms reported during the menopause transition, applying analytical skills to contribute to vital biomedical research.</p>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-marker"></div>
+                        <div class="experience-content">
+                            <h3>AI/ML Developer</h3>
+                            <p class="company">GV Black Dentech</p>
+                            <p>Engineered models using EfficientNet and CNNs for high-level feature extraction from X-ray images, achieving remarkable precision in dental diagnostics.</p>
+                        </div>
+                    </div>
+                    <div class="experience-item">
+                        <div class="experience-marker"></div>
+                        <div class="experience-content">
+                            <h3>Data Science Intern</h3>
+                            <p class="company">Climate Connect Digital</p>
+                            <p>Developed time series and gradient boosting models that improved day-ahead energy market predictions, reducing MAPE from nearly 60% to just over 4%.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <div class="project">
-                <h3>Project Title 1 (e.g., Awesome To-Do App)</h3>
-                <p>A brief description of your project. What does it do? What technologies did you use?</p>
-                <p><strong>Technologies:</strong> React, Node.js, MongoDB</p>
-                <p>
-                    <a href="https://your-deployed-app-link1.com" target="_blank">Live App</a> |
-                    <a href="https://github.com/your-username/project-repo-1" target="_blank">View Code (GitHub)</a>
-                </p>
-                <!-- Optional: <img src="path/to/screenshot1.jpg" alt="Screenshot of Project 1" width="300"> -->
-            </div>
+            <section id="skills" class="section">
+                <h2 class="section-title">Core Competencies</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Deep Learning</span>
+                            <span class="skill-tag">Neural Networks</span>
+                            <span class="skill-tag">Time Series Analysis</span>
+                            <span class="skill-tag">Computer Vision</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Apache Spark</span>
+                            <span class="skill-tag">MATLAB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-bar"></i> Data Science</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Data Visualization</span>
+                            <span class="skill-tag">Algorithm Development</span>
+                            <span class="skill-tag">Biomedical Data Analysis</span>
+                            <span class="skill-tag">Statistical Analysis</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Cloud Computing</span>
+                            <span class="skill-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="certification">
+                    <i class="fas fa-certificate"></i>
+                    <span>DeepLearning.AI TensorFlow Developer Specialisation</span>
+                </div>
+            </section>
 
-            <div class="project">
-                <h3>Project Title 2 (e.g., Weather Dashboard)</h3>
-                <p>Another project description. Highlight key features and challenges.</p>
-                <p><strong>Technologies:</strong> Vanilla JS, OpenWeatherMap API</p>
-                <p>
-                    <!-- If this app is ALSO hosted on GitHub Pages (as a project page) -->
-                    <a href="https://your-username.github.io/weather-dashboard-repo/" target="_blank">Live App</a> |
-                    <a href="https://github.com/your-username/weather-dashboard-repo" target="_blank">View Code
-                        (GitHub)</a>
-                </p>
-            </div>
+            <section id="projects" class="section">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Menopause Symptom Analysis</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details"><i class="fas fa-info-circle"></i></a>
+                                <a href="#" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>Advanced biomedical data analysis to understand symptom patterns during menopause transition using machine learning techniques.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Statistical Analysis</span>
+                        </div>
+                    </div>
 
-            <!-- Add more projects as needed -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Dental X-ray Analysis System</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details"><i class="fas fa-info-circle"></i></a>
+                                <a href="#" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>Computer vision system using EfficientNet and CNNs for automated feature extraction and analysis of dental X-ray images.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">EfficientNet</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Deep Learning</span>
+                        </div>
+                    </div>
 
-        </section>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Energy Market Prediction Model</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details"><i class="fas fa-info-circle"></i></a>
+                                <a href="#" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>Time series and gradient boosting models for day-ahead energy market predictions, achieving 95%+ accuracy improvement.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">XGBoost</span>
+                            <span class="tech-tag">Time Series</span>
+                            <span class="tech-tag">Feature Engineering</span>
+                            <span class="tech-tag">Model Optimization</span>
+                        </div>
+                    </div>
 
-        <section id="contact">
-            <h2>Get In Touch</h2>
-            <p>Email: <a href="mailto:aloksinghmintorian@hotmail.com">youremail@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/alok-singh-as/" target="_blank">yourprofile</a></p>
-            <p>GitHub: <a href="https://github.com/as-uh" target="_blank">your-username</a></p>
-        </section>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Binary Star Detection Algorithm</h3>
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details"><i class="fas fa-info-circle"></i></a>
+                                <a href="#" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p>Physics-based algorithms for analyzing astronomical data and detecting binary star systems from Gaia telescope observations.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Astropy</span>
+                            <span class="tech-tag">Signal Processing</span>
+                            <span class="tech-tag">Data Mining</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h2 class="section-title">Let's Connect</h2>
+                <div class="contact-content">
+                    <p class="contact-description">
+                        I'm always interested in discussing new opportunities, collaborations, or interesting projects in data science and AI/ML.
+                    </p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email</h3>
+                            <a href="mailto:aloksinghmintorian@hotmail.com">aloksinghmintorian@hotmail.com</a>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fab fa-linkedin"></i>
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/alok-singh-as/" target="_blank">Connect with me</a>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fab fa-github"></i>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/as-uh" target="_blank">View my code</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>© 2025 [Alok Singh]</p>
+        <div class="container">
+            <p>&copy; 2025 Alok Singh. Built with passion for data science and innovation.</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
